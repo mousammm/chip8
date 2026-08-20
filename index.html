@@ -11,10 +11,24 @@
 <h1>Chip8</h1>
 <div class="para" id="d">
   <p>Its inevitable if someone is getting into emulator development, the first obstacle is chip8. Emulating is a techinque of running software desing for a specific hardware to run on the host computer so emulating is a software that emualtes physical hardware.</p>
-  <p>But chip8 is not really a piece of hardware hardware that we are emulating but it's an intrepreter, so it more like chip8 intrepreter, but i will call it an emulator cause it sounds cool!</p>
+  <p>But chip8 is not really a piece of hardware hardware that we are emulating but it's an intrepreter, so it more like chip8 intrepreter, but i will call it an emulator.</p>
   <p><kbd>NOTE</kbd>: This is not a step by step tutorial for creating a chip8 emulator but a techincal refrence of how mine works internally.</p>
   <p>Source:&nbsp;<a href="https://github.com/mousammm/chip8">https://github.com/mousammm/chip8</a></p>
 </div>
+
+<h2>Demos.</h2>
+<video autoplay muted loop playsinline width="80%">
+  <source src="./asset/chip8.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<video autoplay muted loop playsinline width="80%">
+  <source src="./asset/particles.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<img src="./asset/imb_logo.png" width="60%">
+<img src="./asset/test.png" width="60%">
 
 <h2>Prerequisites.</h2>
 <p><kbd>c</kbd>: base code.</p>
@@ -89,10 +103,8 @@
 </pre>
 
 <h2>instruction def.</h2>
-
 <div>
   <kbd>0NNN</kbd>: skip(not required).</kbd><br>
-    for (int i = 0; i<64*32; ++i) { display[i] = 0; }
   <kbd>00E0</kbd>: clear screen.</kbd><br>
   <kbd>00EE</kbd>: return from subroutine.</kbd><br>
 </div>
